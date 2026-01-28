@@ -1,4 +1,4 @@
-// ===== Exercise 1 
+// ===== Exercise 1 =========================================================================================================
 // ===== Part I ==========================================
 const people = ["Greg", "Mary", "Devon", "James"];
 
@@ -43,7 +43,7 @@ for (let i = 0; i < people.length; i++) {
 
 
 
-// ===== Exercise 2
+// ===== Exercise 2 =========================================================================================================
 // ===== part I ==========================================
 // ===== 1
 const colors = ["blue", "red", "green", "black", "white"];
@@ -58,7 +58,7 @@ for (let i = 0; i < colors.length; i++) {
   console.log(`My ${i + 1}${suffixes[i]} choice is ${colors[i]}`);
 }
 
-// ===== Exercise 3
+// ===== Exercise 3 =========================================================================================================
 let number;
 
 do {
@@ -67,7 +67,7 @@ do {
   number = Number(number);    
 } while (number < 10);
 
-// ===== Exercise 4
+// ===== Exercise 4 =========================================================================================================
 const building = {
   numberOfFloors: 4,
   numberOfAptByFloor: {
@@ -110,7 +110,7 @@ if (sarahRent + davidRent > danRent) {
 
 console.log(building.numberOfRoomsAndRent.dan);
 
-// ===== Exercise 5
+// ===== Exercise 5 =========================================================================================================
 const family = {
   father: "Ahmed",
   mother: "Fatima",
@@ -127,4 +127,39 @@ for (let key in family) {
 for (let key in family) {
   console.log(family[key]);
 }
-// ===== Exercise 6
+// ===== Exercise 6 =========================================================================================================
+const details = {
+  my: 'name',
+  is: 'Rudolf',
+  the: 'reindeer'
+};
+
+let sentence = "";
+
+for (let key in details) {
+  sentence += key + " " + details[key] + " ";
+}
+
+console.log(sentence.trim());
+
+// ===== Exercise 7 =========================================================================================================
+const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+
+let letters = [];
+
+for (let i = 0; i < names.length; i++) {
+  letters.push(names[i][0]);
+}
+
+letters.sort();
+
+const secretSociety = letters.join("");
+
+console.log(secretSociety);
+
+
+
+
+
+
+
