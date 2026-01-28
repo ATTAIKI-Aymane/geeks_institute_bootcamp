@@ -1,9 +1,41 @@
-// ===== Exercise 1
+// ===== Exercise 1 =========================================================================================================
+let numbers = [123, 8409, 100053, 333333333, 7];
 
-// ===== Exercise 2
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i] % 3 === 0);
+}
+// ===== Exercise 2 =========================================================================================================
+let guestList = {
+  randy: "Germany",
+  karla: "France",
+  wendy: "Japan",
+  norman: "England",
+  sam: "Argentina"
+};
 
-// ===== Exercise 3
 
-// ===== Exercise 4
+let name = prompt("What is your name?").toLowerCase(); 
 
-// ===== Exercise ...
+if (name in guestList) {
+  console.log(`Hi! I'm ${name}, and I'm from ${guestList[name]}.`);
+} else {
+  console.log("Hi! I'm a guest.");
+}
+// ===== Exercise 3 =========================================================================================================
+let age = [20, 5, 12, 43, 98, 55];
+
+// Calculate the sum of all ages
+let sum = 0;
+for (let i = 0; i < age.length; i++) {
+  sum += age[i];
+}
+console.log("Sum of all ages:", sum);
+
+// Find the highest age
+let maxAge = age[0];
+for (let i = 1; i < age.length; i++) {
+  if (age[i] > maxAge) {
+    maxAge = age[i];
+  }
+}
+console.log("Highest age:", maxAge);
