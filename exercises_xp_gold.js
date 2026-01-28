@@ -37,7 +37,7 @@ let maxAge = age[0];
 for (let i = 1; i < age.length; i++) {
   if (age[i] > maxAge) {
     maxAge = age[i];
-  }
+  } 
 }
 
 
