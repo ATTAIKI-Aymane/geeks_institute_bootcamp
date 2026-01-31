@@ -18,4 +18,20 @@ if (wordNot !== -1 && wordBad !== -1 && wordBad > wordNot) {
 
 // ====== Daily Challenge 2
 
+let star = "*";
+for (i=0 ; i<3 ; i++) {
+    for (let j = 0; j <=1; j++) {
+        console.log(star)  ;
+        star += "*" ;
+    }
+}
+
+//or
+
+let $star = "*";
+for (i=0 ; i<6 ; i++) {
+        console.log($star)  ;
+        star += "*" ;
+}
+
 // ====== Daily Challenge 3
