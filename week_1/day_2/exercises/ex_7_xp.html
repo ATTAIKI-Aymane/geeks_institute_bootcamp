@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book liste</title>
+</head>
+<body>
+    <section class="listBooks"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    const allBooks = [
+  {
+    title: "Harry Potter",
+    author: "J.K. Rowling",
+    image: "https://covers.openlibrary.org/b/id/7984916-L.jpg",
+    alreadyRead: true
+  },
+  {
+    title: "The Alchemist",
+    author: "Paulo Coelho",
+    image: "https://covers.openlibrary.org/b/id/8106661-L.jpg",
+    alreadyRead: false
+  }
+];
+
+const section = document.querySelector(".listBooks");
+
+allBooks.forEach(book => {
+
+    
+  const bookDiv = document.createElement("div");
+
+  
+  const bookDetails = document.createElement("p");
+  bookDetails.textContent = `${book.title} written by ${book.author}`;
+
+  // create image
+  const img = document.createElement("img");
+  img.src = book.image;
+  img.style.width = "100px";
+
+  
+  if (book.alreadyRead) {
+    bookDetails.style.color = "red";
+  }
+
+  
+  bookDiv.appendChild(bookDetails);
+  bookDiv.appendChild(img);
+  section.appendChild(bookDiv);
+});
+
+</script>
