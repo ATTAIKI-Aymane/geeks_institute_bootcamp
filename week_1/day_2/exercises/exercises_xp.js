@@ -177,5 +177,7 @@ totalVacationCost();
 
 // ===== Exercise 6 ========================================================================================================
 //to checking this exercise please check out this link "https://github.com/ATTAIKI-Aymane/geeks_institute_bootcamp/blob/main/week_1/day_2/exercises/ex_6_xp.html"
+
 // ===== Exercise 7 ========================================================================================================
 //to checking this exercise please check out this link "https://github.com/ATTAIKI-Aymane/geeks_institute_bootcamp/blob/main/week_1/day_2/exercises/ex_7_xp.html"
+
