@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+  
+</head>
+<body>
+
+  <div id="container">Users:</div>
+
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+
+  <ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>
+
+</body>
+
+</html>
+
+
+<script>
+  //  Retrieve the div and console.log it
+const container = document.getElementById("container");
+console.log(container);
+
+//  Change “Pete” to “Richard”
+const allLis = document.querySelectorAll("li");
+allLis.forEach(li => {
+  if (li.textContent === "Pete") {
+    li.textContent = "Richard";
+  }
+});
+
+//  Delete the second <li> of the second <ul>
+const uls = document.querySelectorAll("ul");
+uls[1].children[1].remove(); // Sarah
+
+//  Change the name of the first <li> of each <ul> to your name
+uls.forEach(ul => {
+  ul.children[0].textContent = "Aymane";
+});
+
+//  Add class student_list to both <ul>
+uls.forEach(ul => {
+  ul.classList.add("student_list");
+});
+
+//  Add classes university and attendance to the first <ul>
+uls[0].classList.add("university", "attendance");
+
+//  Style the div
+container.style.backgroundColor = "lightblue";
+container.style.padding = "10px";
+
+//  Do not display the <li> with “Dan”
+allLis.forEach(li => {
+  if (li.textContent === "Dan") {
+    li.style.display = "none";
+  }
+});
+
+//  Add a border to the <li> with “Richard”
+allLis.forEach(li => {
+  if (li.textContent === "Richard") {
+    li.style.border = "2px solid black";
+  }
+});
+
+// Change font size of the whole body
+document.body.style.fontSize = "18px";
+
+//  BONUS
+if (container.style.backgroundColor === "lightblue") {
+  const users = container.textContent.replace("Users:", "").trim();
+  alert("Hello " + users);
+}
+
+</script>
