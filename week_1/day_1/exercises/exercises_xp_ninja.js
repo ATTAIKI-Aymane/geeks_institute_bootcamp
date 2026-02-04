@@ -34,31 +34,34 @@ compareBMI(person1, person2);
 
 
 // ===== Exercise 2
-
-function calculateAverage(gradesList) {
-  let sum = 0;
-  for (let i = 0; i < gradesList.length; i++) {
-    sum += gradesList[i];
-  }
-  return sum / gradesList.length;
+// 1️⃣ Function ديال decision: checks pass/fail
+function checkPassFail(average) {
+    if (average >= 65) {
+        return `Passed with an average of ${average}`;
+    } else {
+        return `Failed with an average of ${average}, must repeat the course`;
+    }
 }
-
 
 function findAvg(gradesList) {
-  const average = calculateAverage(gradesList);
+    let sum = 0;
 
-  if (average >= 65) {
-    console.log("Passed with an average of " + average);
-  } else {
-    console.log("Failed with an average of " + average + ", must repeat the course");
-  }
+    gradesList.forEach(grade => sum += grade);
+
+    const average = sum / gradesList.length;
+
+    // call checkPassFail function
+    const resultMessage = checkPassFail(average);
+
+    console.log(resultMessage);
 }
 
+// Test data
 const studentGrades1 = [80, 77, 88, 95, 68];
 const studentGrades2 = [50, 60, 58, 62, 47];
 
+// Call function
 findAvg(studentGrades1);
 findAvg(studentGrades2);
-
 
 
