@@ -34,30 +34,31 @@ compareBMI(person1, person2);
 
 
 // ===== Exercise 2
+// 1️⃣ Function ديال حساب المتوسط فقط
 function calculateAverage(gradesList) {
   let sum = 0;
-
   for (let i = 0; i < gradesList.length; i++) {
     sum += gradesList[i];
   }
-
   return sum / gradesList.length;
 }
 
-function findAvg(gradesList){
-    const average = calculateAverage(gradesList);
+// 2️⃣ Function ديال decision
+function findAvg(gradesList) {
+  const average = calculateAverage(gradesList);
 
-    if (average >= 65) {
-        console.log("Passed with an average of " + average);
-}else {
-        console.log("Failed with an average of " + average);
-    }
+  if (average >= 65) {
+    console.log("Passed with an average of " + average);
+  } else {
+    console.log("Failed with an average of " + average + ", must repeat the course");
+  }
 }
 
-const studentGrades = [80, 77, 88, 95, 68];
+const studentGrades1 = [80, 77, 88, 95, 68];
 const studentGrades2 = [50, 60, 58, 62, 47];
 
-findAvg(studentGrades);
+findAvg(studentGrades1);
 findAvg(studentGrades2);
+
 
 
