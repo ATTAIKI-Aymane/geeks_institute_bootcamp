@@ -34,7 +34,7 @@ compareBMI(person1, person2);
 
 
 // ===== Exercise 2
-// 1️⃣ Function ديال حساب المتوسط فقط
+
 function calculateAverage(gradesList) {
   let sum = 0;
   for (let i = 0; i < gradesList.length; i++) {
@@ -43,7 +43,7 @@ function calculateAverage(gradesList) {
   return sum / gradesList.length;
 }
 
-// 2️⃣ Function ديال decision
+
 function findAvg(gradesList) {
   const average = calculateAverage(gradesList);
 
