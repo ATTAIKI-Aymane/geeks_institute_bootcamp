@@ -2,7 +2,7 @@
 // to checking this exercise please check out this link "https://github.com/ATTAIKI-Aymane/geeks_institute_bootcamp/tree/main/week_1/day_2/daily_challenge/Planets"
 
 
-// ====== Daily Challenge 2
+// ====== Daily Challenge 2   Words in the stars
 
 // 1️⃣ Prompt user
 const input = prompt("Enter words separated by commas:");
