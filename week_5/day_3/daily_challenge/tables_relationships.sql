@@ -7,7 +7,7 @@ CREATE TABLE Customer (
     last_name VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE Customer_profile (
+CREATE TABLE Customer_profile ( 
     id SERIAL PRIMARY KEY,
     isLoggedIn BOOLEAN DEFAULT false,
     customer_id INTEGER REFERENCES Customer(id) UNIQUE
